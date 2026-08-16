@@ -858,11 +858,6 @@ select {
    SERVICES
 ================================ */
 
-.services-section {
-    background: var(--pink-light);
-}
-
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -945,38 +940,14 @@ select {
 
 
 .about-photo {
-    aspect-ratio: 4 / 5;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    aspect-ratio: 778 / 1295;
+    display: block;
+    object-fit: cover;
 
     border-radius: var(--radius-lg);
 
-    background:
-        radial-gradient(
-            circle at 20% 20%,
-            white,
-            transparent 15%
-        ),
-        linear-gradient(
-            135deg,
-            var(--pink-hot),
-            var(--wine)
-        );
-
     box-shadow: var(--shadow);
-
-    color: white;
-
-    text-align: center;
-
-    font-size: clamp(3rem, 6vw, 5rem);
-    font-weight: 900;
-
-    line-height: 0.8;
-
-    letter-spacing: -0.08em;
 }
 
 
