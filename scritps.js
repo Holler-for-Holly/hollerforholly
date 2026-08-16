@@ -93,7 +93,7 @@ revealElements.forEach((element) => {
 // ==============================
 
 // CHANGE THIS IF HOLLY USES ANOTHER EMAIL
-const hollyEmail = "hello@hollerforholly.ca";
+const hollyEmail = "holly@hollerforholly.ca";
 
 
 const contactForm = document.getElementById("contactForm");
