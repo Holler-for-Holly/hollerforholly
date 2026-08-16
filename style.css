@@ -474,6 +474,8 @@ select {
 .post-image {
     height: 390px;
 
+    overflow: hidden;
+
     border-radius: 19px;
 
     display: flex;
@@ -482,29 +484,15 @@ select {
 
     text-align: center;
 
-    background:
-        radial-gradient(
-            circle at 80% 10%,
-            rgba(255,255,255,.5),
-            transparent 30%
-        ),
-        linear-gradient(
-            145deg,
-            var(--pink-hot),
-            var(--wine)
-        );
-
-    color: white;
+    background: #f4b7c2;
 }
 
 
-.post-image span {
-    font-size: 2.4rem;
-    line-height: 0.83;
-
-    letter-spacing: -0.08em;
-
-    font-weight: 900;
+.post-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
 }
 
 
