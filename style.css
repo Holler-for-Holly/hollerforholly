@@ -929,7 +929,7 @@ select {
 
 .about-photo {
     width: 100%;
-    aspect-ratio: 778 / 1295;
+    aspect-ratio: 3 / 4;
     display: block;
     object-fit: cover;
 
