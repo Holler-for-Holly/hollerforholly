@@ -598,7 +598,6 @@ select {
     width: max-content;
 
     display: flex;
-    gap: 35px;
 
     animation: marquee 25s linear infinite;
 
@@ -608,9 +607,17 @@ select {
 }
 
 
+.marquee-group {
+    display: flex;
+    flex-shrink: 0;
+    gap: 35px;
+    padding-right: 35px;
+}
+
+
 @keyframes marquee {
     to {
-        transform: translateX(-50%);
+        transform: translateX(calc(-100% / 3));
     }
 }
 
