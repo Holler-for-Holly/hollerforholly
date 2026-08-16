@@ -441,17 +441,32 @@
                         </div>
 
 
-                        <label>
-                            What do you need help with?
+                        <div class="form-field">
+                            <span class="form-label">What do you need help with?</span>
 
-                            <select id="service">
-                                <option>Content Creation</option>
-                                <option>Social Strategy</option>
-                                <option>Short-Form Video</option>
-                                <option>Creative Direction</option>
-                                <option>Something Else</option>
-                            </select>
-                        </label>
+                            <div class="custom-select" id="serviceDropdown">
+                                <select id="service" class="native-select" tabindex="-1" aria-hidden="true">
+                                    <option>Content Creation</option>
+                                    <option>Social Strategy</option>
+                                    <option>Short-Form Video</option>
+                                    <option>Creative Direction</option>
+                                    <option>Something Else</option>
+                                </select>
+
+                                <button class="custom-select-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                                    <span>Content Creation</span>
+                                    <span class="custom-select-arrow" aria-hidden="true">⌄</span>
+                                </button>
+
+                                <div class="custom-select-menu" role="listbox" aria-label="What do you need help with?">
+                                    <button type="button" role="option" aria-selected="true">Content Creation</button>
+                                    <button type="button" role="option" aria-selected="false">Social Strategy</button>
+                                    <button type="button" role="option" aria-selected="false">Short-Form Video</button>
+                                    <button type="button" role="option" aria-selected="false">Creative Direction</button>
+                                    <button type="button" role="option" aria-selected="false">Something Else</button>
+                                </div>
+                            </div>
+                        </div>
 
 
                         <label>

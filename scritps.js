@@ -98,6 +98,56 @@ const hollyEmail = "holly@hollerforholly.ca";
 
 const contactForm = document.getElementById("contactForm");
 
+const serviceDropdown = document.getElementById("serviceDropdown");
+const serviceSelect = document.getElementById("service");
+const serviceTrigger = serviceDropdown.querySelector(".custom-select-trigger");
+const serviceTriggerText = serviceTrigger.querySelector("span");
+const serviceOptions = [...serviceDropdown.querySelectorAll('[role="option"]')];
+
+function closeServiceDropdown() {
+    serviceDropdown.classList.remove("open");
+    serviceTrigger.setAttribute("aria-expanded", "false");
+}
+
+serviceTrigger.addEventListener("click", () => {
+    const isOpen = serviceDropdown.classList.toggle("open");
+    serviceTrigger.setAttribute("aria-expanded", isOpen);
+
+    if (isOpen) {
+        serviceOptions.find((option) => option.getAttribute("aria-selected") === "true").focus();
+    }
+});
+
+serviceOptions.forEach((option, index) => {
+    option.addEventListener("click", () => {
+        serviceSelect.value = option.textContent.trim();
+        serviceTriggerText.textContent = option.textContent.trim();
+        serviceOptions.forEach((item) => item.setAttribute("aria-selected", "false"));
+        option.setAttribute("aria-selected", "true");
+        closeServiceDropdown();
+        serviceTrigger.focus();
+    });
+
+    option.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+            event.preventDefault();
+            const direction = event.key === "ArrowDown" ? 1 : -1;
+            serviceOptions[(index + direction + serviceOptions.length) % serviceOptions.length].focus();
+        }
+    });
+});
+
+document.addEventListener("click", (event) => {
+    if (!serviceDropdown.contains(event.target)) closeServiceDropdown();
+});
+
+serviceDropdown.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        closeServiceDropdown();
+        serviceTrigger.focus();
+    }
+});
+
 
 contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
