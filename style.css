@@ -609,9 +609,21 @@ select {
 
 .marquee-group {
     display: flex;
+    align-items: center;
     flex-shrink: 0;
     gap: 35px;
     padding-right: 35px;
+}
+
+.marquee-group > span {
+    white-space: nowrap;
+}
+
+.marquee-star {
+    flex: 0 0 auto;
+    font-family: Georgia, serif;
+    font-style: normal;
+    line-height: 1;
 }
 
 
