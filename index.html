@@ -1,393 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+    <meta
+        name="description"
+        content="Holler for Holly — social media content, creative direction, and freelance media work."
+    >
 
-  <meta
-    name="description"
-    content="Holler for Holly — bold creative work, design, and digital experiences."
-  />
+    <title>Holler for Holly | Social Media & Creative</title>
 
-  <title>Holler for Holly</title>
-
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="background">
-    <div class="glow glow-one"></div>
-    <div class="glow glow-two"></div>
-    <div class="grid-overlay"></div>
-  </div>
+    <!-- NAVBAR -->
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                HOLLER<span>FOR HOLLY</span>
+            </a>
 
-  <header class="header">
-    <nav class="navbar container">
+            <ul class="desktop-nav">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-contact">Let's Talk</a></li>
+            </ul>
 
-      <a href="#home" class="logo">
-        HOLLER FOR HOLLY<span>.</span>
-      </a>
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-      <button
-        class="menu-button"
-        id="menuButton"
-        aria-label="Open navigation"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-      </button>
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#work">Work</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Let's Talk</a>
+            </div>
+        </nav>
+    </header>
 
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#contact" class="nav-cta">
-          Holler for Holly
-        </a>
-      </div>
 
-    </nav>
-  </header>
+    <main>
 
-  <main>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
 
-    <!-- HERO -->
-    <section class="hero container" id="home">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">SOCIAL MEDIA • CONTENT • CREATIVE</p>
 
-      <div class="hero-copy">
+                    <h1>
+                        Content worth
+                        <span>hollering about.</span>
+                    </h1>
 
-        <p class="eyebrow reveal">
-          CREATIVE STUDIO
-        </p>
+                    <p class="hero-description">
+                        Holly creates social-first content, campaigns and creative
+                        that help brands show up online with actual personality.
+                    </p>
 
-        <h1 class="hero-title">
-          <span class="hero-line">HOLLER</span>
-          <span class="hero-line hero-for">FOR</span>
-          <span class="hero-line hero-holly">HOLLY.</span>
-        </h1>
+                    <div class="hero-actions">
+                        <a href="#work" class="button primary-button">
+                            See the work
+                        </a>
 
-        <p class="hero-description reveal">
-          Loud ideas. Sharp design. Digital work built to get noticed.
-        </p>
+                        <a href="#contact" class="button secondary-button">
+                            Work with Holly
+                        </a>
+                    </div>
 
-        <div class="hero-buttons reveal">
+                    <div class="social-row">
+                        <span>Find Holly</span>
 
-          <a href="#work" class="button button-primary">
-            See the work
-            <span>↗</span>
-          </a>
+                        <!-- REPLACE THESE LINKS -->
+                        <a href="#" target="_blank">Instagram ↗</a>
+                        <a href="#" target="_blank">TikTok ↗</a>
+                        <a href="#" target="_blank">LinkedIn ↗</a>
+                    </div>
+                </div>
 
-          <a href="#about" class="button button-outline">
-            Meet Holly
-          </a>
 
+                <div class="hero-art reveal">
+
+                    <div class="floating-note note-one">
+                        <span>✦</span>
+                        Social-first
+                    </div>
+
+                    <div class="floating-note note-two">
+                        <span>♥</span>
+                        Scroll-stopping
+                    </div>
+
+                    <div class="phone">
+                        <div class="phone-top"></div>
+
+                        <div class="phone-screen">
+                            <div class="screen-tag">HOLLER FOR HOLLY</div>
+
+                            <div class="fake-post">
+                                <div class="post-image">
+                                    <span>YOUR<br>CONTENT<br>HERE</span>
+                                </div>
+
+                                <div class="post-bottom">
+                                    <div>
+                                        <strong>@hollerforholly</strong>
+                                        <p>Creative made for the feed.</p>
+                                    </div>
+
+                                    <span>♡</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-circle"></div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- MARQUEE -->
+        <section class="marquee-section">
+            <div class="marquee">
+                <div class="marquee-track">
+                    <span>CONTENT CREATION ✦</span>
+                    <span>SOCIAL STRATEGY ✦</span>
+                    <span>BRAND STORYTELLING ✦</span>
+                    <span>SHORT-FORM VIDEO ✦</span>
+                    <span>CREATIVE DIRECTION ✦</span>
+
+                    <span>CONTENT CREATION ✦</span>
+                    <span>SOCIAL STRATEGY ✦</span>
+                    <span>BRAND STORYTELLING ✦</span>
+                    <span>SHORT-FORM VIDEO ✦</span>
+                    <span>CREATIVE DIRECTION ✦</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- WORK -->
+        <section class="section work-section" id="work">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">SELECTED WORK</p>
+                        <h2>Made to be seen.</h2>
+                    </div>
+
+                    <p>
+                        Social campaigns, video, branding moments and content
+                        built for where people actually spend their time.
+                    </p>
+                </div>
+
+
+                <div class="work-grid">
+
+                    <article class="work-card large-card reveal">
+                        <div class="work-visual visual-one">
+                            <span class="work-number">01</span>
+
+                            <div class="visual-text">
+                                YOUR
+                                <strong>PROJECT</strong>
+                            </div>
+                        </div>
+
+                        <div class="work-info">
+                            <div>
+                                <p>Social Campaign</p>
+                                <h3>Project Name</h3>
+                            </div>
+
+                            <a href="#">View project ↗</a>
+                        </div>
+                    </article>
+
+
+                    <article class="work-card reveal">
+                        <div class="work-visual visual-two">
+                            <span class="work-number">02</span>
+
+                            <div class="visual-text">
+                                SHORT
+                                <strong>FORM</strong>
+                            </div>
+                        </div>
+
+                        <div class="work-info">
+                            <div>
+                                <p>Video / TikTok</p>
+                                <h3>Project Name</h3>
+                            </div>
+
+                            <a href="#">View project ↗</a>
+                        </div>
+                    </article>
+
+
+                    <article class="work-card reveal">
+                        <div class="work-visual visual-three">
+                            <span class="work-number">03</span>
+
+                            <div class="visual-text">
+                                BRAND
+                                <strong>STORY</strong>
+                            </div>
+                        </div>
+
+                        <div class="work-info">
+                            <div>
+                                <p>Creative Direction</p>
+                                <h3>Project Name</h3>
+                            </div>
+
+                            <a href="#">View project ↗</a>
+                        </div>
+                    </article>
+
+
+                    <article class="work-card large-card reveal">
+                        <div class="work-visual visual-four">
+                            <span class="work-number">04</span>
+
+                            <div class="visual-text">
+                                SOCIAL
+                                <strong>FIRST</strong>
+                            </div>
+                        </div>
+
+                        <div class="work-info">
+                            <div>
+                                <p>Content Creation</p>
+                                <h3>Project Name</h3>
+                            </div>
+
+                            <a href="#">View project ↗</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SERVICES -->
+        <section class="section services-section" id="services">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">WHAT HOLLY DOES</p>
+                        <h2>Creative help, minus the corporate beige.</h2>
+                    </div>
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card reveal">
+                        <span>01</span>
+                        <h3>Content Creation</h3>
+                        <p>
+                            Photo, video and social content built around your
+                            brand and the platforms your audience actually uses.
+                        </p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span>02</span>
+                        <h3>Social Strategy</h3>
+                        <p>
+                            Content planning, brand voice, campaign concepts and
+                            social direction without posting just to post.
+                        </p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span>03</span>
+                        <h3>Short-Form Video</h3>
+                        <p>
+                            TikToks, Reels and vertical content designed around
+                            strong hooks and platform-native storytelling.
+                        </p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span>04</span>
+                        <h3>Creative Direction</h3>
+                        <p>
+                            Concepts, visual direction and creative ideas that
+                            give campaigns a recognizable point of view.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
+            <div class="container about-grid">
+
+                <div class="about-art reveal">
+                    <div class="about-photo">
+                        <!-- Replace with an actual image later -->
+                        <span>HOLLY<br>GOES<br>HERE :)</span>
+                    </div>
+
+                    <div class="about-sticker">
+                        AVAILABLE<br>FOR FREELANCE
+                    </div>
+                </div>
+
+
+                <div class="about-copy reveal">
+                    <p class="eyebrow">MEET HOLLY</p>
+
+                    <h2>
+                        Creative brain.<br>
+                        Internet native.
+                    </h2>
+
+                    <p>
+                        Holly works across social media, content production and
+                        creative direction to help businesses feel more human online.
+                    </p>
+
+                    <p>
+                        Whether it's a one-off campaign, ongoing social content or
+                        figuring out what your brand should even be posting, Holly
+                        brings ideas from concept to feed.
+                    </p>
+
+                    <div class="mini-stats">
+                        <div>
+                            <strong>Social</strong>
+                            <span>Strategy</span>
+                        </div>
+
+                        <div>
+                            <strong>Photo</strong>
+                            <span>+ Video</span>
+                        </div>
+
+                        <div>
+                            <strong>Ideas</strong>
+                            <span>Lots of them</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+
+                <div class="contact-card reveal">
+
+                    <div class="contact-copy">
+                        <p class="eyebrow light-eyebrow">LET'S MAKE SOMETHING</p>
+
+                        <h2>
+                            Got a project?<br>
+                            Holler for Holly.
+                        </h2>
+
+                        <p>
+                            Tell Holly a little about what you're working on
+                            and what kind of creative help you need.
+                        </p>
+
+                        <!-- CHANGE EMAIL -->
+                        <a
+                            class="email-link"
+                            href="mailto:hello@hollerforholly.ca"
+                        >
+                            hello@hollerforholly.ca ↗
+                        </a>
+                    </div>
+
+
+                    <form class="contact-form" id="contactForm">
+
+                        <div class="form-row">
+                            <label>
+                                Name
+                                <input
+                                    id="name"
+                                    type="text"
+                                    placeholder="Your name"
+                                    required
+                                >
+                            </label>
+
+                            <label>
+                                Email
+                                <input
+                                    id="email"
+                                    type="email"
+                                    placeholder="you@email.com"
+                                    required
+                                >
+                            </label>
+                        </div>
+
+
+                        <label>
+                            What do you need help with?
+
+                            <select id="service">
+                                <option>Content Creation</option>
+                                <option>Social Strategy</option>
+                                <option>Short-Form Video</option>
+                                <option>Creative Direction</option>
+                                <option>Something Else</option>
+                            </select>
+                        </label>
+
+
+                        <label>
+                            Tell me about the project
+
+                            <textarea
+                                id="message"
+                                rows="5"
+                                placeholder="Give me the rundown..."
+                                required
+                            ></textarea>
+                        </label>
+
+
+                        <button class="button form-button" type="submit">
+                            Send inquiry ↗
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#home" class="footer-logo">
+                HOLLER<span>FOR HOLLY</span>
+            </a>
+
+            <p>
+                © <span id="year"></span> Holler for Holly
+            </p>
+
+            <div class="footer-links">
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">LinkedIn</a>
+            </div>
         </div>
+    </footer>
 
-      </div>
 
-      <div class="hero-visual reveal">
-
-        <div class="hero-card">
-
-          <div class="badge">
-            HOLLER
-          </div>
-
-          <div class="card-copy">
-            <span>MAKE</span>
-            <strong>SOME</strong>
-            <span>NOISE</span>
-          </div>
-
-          <div class="card-footer">
-            HOLLER FOR HOLLY
-          </div>
-
-        </div>
-
-        <div class="floating-star star-one">✦</div>
-        <div class="floating-star star-two">✦</div>
-
-      </div>
-
-    </section>
-
-    <!-- MARQUEE -->
-    <section class="marquee-section">
-
-      <div class="marquee">
-
-        <div class="marquee-track">
-
-          <span>HOLLER FOR HOLLY</span>
-          <i>✦</i>
-
-          <span>DESIGN</span>
-          <i>✦</i>
-
-          <span>CREATIVE</span>
-          <i>✦</i>
-
-          <span>DIGITAL</span>
-          <i>✦</i>
-
-          <span>HOLLER FOR HOLLY</span>
-          <i>✦</i>
-
-          <span>DESIGN</span>
-          <i>✦</i>
-
-          <span>CREATIVE</span>
-          <i>✦</i>
-
-          <span>DIGITAL</span>
-          <i>✦</i>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section container" id="about">
-
-      <div class="section-heading reveal">
-
-        <p class="eyebrow">
-          ABOUT
-        </p>
-
-        <h2>
-          Loud enough
-          <span>to remember.</span>
-        </h2>
-
-      </div>
-
-      <div class="about-grid">
-
-        <div class="about-copy reveal">
-
-          <p>
-            Holler for Holly is built around personality,
-            bold visuals, and creative work that refuses to
-            quietly disappear into the background.
-          </p>
-
-          <p>
-            The goal is simple: make something people actually notice.
-          </p>
-
-        </div>
-
-        <div class="about-card reveal">
-
-          <div class="about-card-top">
-            <span>THE BRAND</span>
-            <span>01</span>
-          </div>
-
-          <h3>
-            HOLLER<br>
-            FOR<br>
-            HOLLY
-          </h3>
-
-          <div class="about-card-bottom">
-            BIG ENERGY. GOOD WORK.
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- WORK -->
-    <section class="section container" id="work">
-
-      <div class="section-heading reveal">
-
-        <p class="eyebrow">
-          SELECTED WORK
-        </p>
-
-        <h2>
-          Worth making
-          <span>some noise about.</span>
-        </h2>
-
-      </div>
-
-      <div class="projects">
-
-        <article class="project reveal">
-
-          <div class="project-image project-pink">
-
-            <span class="project-index">
-              01
-            </span>
-
-            <div class="project-word">
-              LOUD
-            </div>
-
-          </div>
-
-          <div class="project-info">
-
-            <div>
-              <h3>LOUD Studio</h3>
-              <p>Branding / Creative Direction</p>
-            </div>
-
-            <span class="project-arrow">
-              ↗
-            </span>
-
-          </div>
-
-        </article>
-
-        <article class="project reveal">
-
-          <div class="project-image project-red">
-
-            <span class="project-index">
-              02
-            </span>
-
-            <div class="target">
-              <div class="target-circle"></div>
-              <div class="target-circle inner"></div>
-            </div>
-
-          </div>
-
-          <div class="project-info">
-
-            <div>
-              <h3>Hotline</h3>
-              <p>Web Design / Development</p>
-            </div>
-
-            <span class="project-arrow">
-              ↗
-            </span>
-
-          </div>
-
-        </article>
-
-        <article class="project project-wide reveal">
-
-          <div class="project-image project-gradient">
-
-            <span class="project-index">
-              03
-            </span>
-
-            <div class="mega-text">
-              HOLLER<br>
-              FOR<br>
-              HOLLY
-            </div>
-
-          </div>
-
-          <div class="project-info">
-
-            <div>
-              <h3>Holler for Holly</h3>
-              <p>Brand Identity / Digital Experience</p>
-            </div>
-
-            <span class="project-arrow">
-              ↗
-            </span>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </section>
-
-    <!-- STATEMENT -->
-    <section class="statement-section">
-
-      <div class="statement-track">
-
-        <span>
-          NOT QUIET
-        </span>
-
-        <span class="statement-outline">
-          NOT BORING
-        </span>
-
-        <span>
-          HOLLER FOR HOLLY
-        </span>
-
-      </div>
-
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact-section" id="contact">
-
-      <div class="container contact-inner reveal">
-
-        <p class="eyebrow dark-eyebrow">
-          HAVE SOMETHING TO SAY?
-        </p>
-
-        <h2>
-          HOLLER
-          <span>FOR HOLLY.</span>
-        </h2>
-
-        <a
-          href="mailto:hello@hollerforholly.com"
-          class="email-link"
-        >
-          hello@hollerforholly.com
-          <span>↗</span>
-        </a>
-
-      </div>
-
-    </section>
-
-  </main>
-
-  <footer class="footer">
-
-    <div class="container footer-inner">
-
-      <p>
-        © <span id="year"></span> Holler for Holly
-      </p>
-
-      <p>
-        Built loud.
-      </p>
-
-    </div>
-
-  </footer>
-
-  <script src="script.js"></script>
-
+    <script src="scritps.js"></script>
 </body>
 </html>
